@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+.app {
+  overflow-x: hidden;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: pink;
+}
+.header {
+  padding: .5rem 1rem;
+  background-color: $dark-purple;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+}
+.logo {
+  margin-right: 1rem;
+  svg, img {
+    height: 42px;
+  }
+  svg {
+    fill: $primary-blue;
+    width: 62px;
+  }
+}
+.nav-links {
+  .nav-link {
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    color: $primary-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    &.cta {
+      border: 2px solid;
+      cursor: pointer;
+    }
+  }
+}
