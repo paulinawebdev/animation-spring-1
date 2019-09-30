@@ -38,12 +38,7 @@ export default class App extends React.Component {
       <Router>
         <div className="app">
           <Header theme={this.state.theme} toggleTheme={this.toggleTheme} />
-          <Route exact path="/" render={props =>
-            <Spotlight {...props} theme={this.state.theme} items={data} />
-            } />
-          {/* <Route exact path="/video" render={props =>
-            <Video {...props} theme={this.state.theme} items={data} />
-            } /> */}
+          <Spotlight theme={this.state.theme} items={data} />
         </div>
       </Router>
     );
