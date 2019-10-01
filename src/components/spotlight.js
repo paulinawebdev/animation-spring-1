@@ -9,13 +9,6 @@ export default class Spotlight extends React.Component {
             activeCharacter: 0,
             show: true,
             theme: this.props.theme
-            // testDate: {
-            //     "id": 8,
-            //     "name": "Priest",
-            //     "desc": "Okay everyone, remember! Don't get too far away from me, follow the Knight's lead and please stay out of the fire. GET OUT OF THE F-",
-            //     "thumbnail": "http://nxcache.nexon.net/cms/2018/4223/priest.png",
-            //     "fullImg": "http://nxcache.nexon.net/cms/2018/4227/character.png"
-            // }
         }
         this.handleIconClick = this.handleIconClick.bind(this);
     }
